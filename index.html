@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/6b7d429c30.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-wrapper">
+        <div class="wrapper">
+          <p class="result" id="result">Square</p>
+          <input type="number" id="inputUser" placeholder="0" value="" />
+          <div class="buttons">
+            <button id="get">Get</button>
+          </div>
+        </div>
+        <div class="wrapper">
+          <p class="result2" id="result2">Quadrat</p>
+          <input type="number2" id="inputUser2" placeholder="0" value="" />
+          <div class="buttons">
+            <button id="get2">Get</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      let result = document.getElementById("result");
+
+      get.addEventListener("click", () => {
+        let inputNumber = document.getElementById("inputUser").value;
+        sonuc = Math.sqrt(inputNumber);
+        // console.log(sonuc);
+        result.innerHTML = sonuc;
+      });
+
+      // function hesapla() {
+      //   let inputNumber = document.getElementById("inputUser").value;
+      //   sonuc = Math.sqrt(inputNumber);
+      //   console.log(sonuc);
+      // }
+
+      // ------
+
+      let quadrat = document.getElementById("result2");
+      let get2Btn = document.getElementById("get2");
+      // let inputNumber = document.getElementById("inputUser").value;
+
+      // V1 ---
+      // function quadratBtn(s1, s1) {
+      //   var s1 = document.getElementById("inputUser2").value;
+      //   quadratOutput = s1 * s1;
+      //   // console.log(cikti);
+      //   quadrat.innerHTML = quadratOutput;
+      // }
+
+      // V2 ---
+      get2Btn.addEventListener("click", (s1, s2) => {
+        var s1 = document.getElementById("inputUser2").value;
+        quadratOutput = s1 * s1;
+        quadrat.innerHTML = quadratOutput;
+      });
+    </script>
+  </body>
+</html>
